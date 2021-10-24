@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<!--
+  Author:  Izzat Hasan
+  Class:   Web & Distributed Programming
+  Project: Map Mania v1
+  Description: This is the first version of Map Mania that I am creating for Programming Assignment 3.
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Map Mania 1 </title>
+    <link rel ="stylesheet" href="index.css">
+    <script src = "index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+  </head>
+  <body >
+      <h1> Map Mania Version 2 </h1>
+      Hint: <input id = "hint"   size="40" disabled>
+      Score: <input id="score-id" type="text" value="" size="2" disabled><br><br>
+
+      <div class = "popup" id ="popup-1">
+        <div class = "overlay"></div>
+        <div class= "content">
+        <div class = "close-btn" onclick ="howtoplay()">&times;</div>
+        <h1> How To Play</h1>
+        <p> The game has 10 of my favorite locations hidden. The objective of the game is to find these hidden locations using the hint and zoom options provided to you.
+          If you are having a hard time finding the locations, simply click "win now!"</p>
+        </div>
+      </div>
+        <button  class ="button" autofocus onclick="cheatcode()">Click to win!</button>
+
+      <button  class ="button"  autofocus onclick="howtoplay()">How to play</button>
+
+      <div id = "myMapId"></div>
+      <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe2FavqNrJy7GVaMvHEpa9JXu1V3sojJw&callback=initMap">
+  </script>
+
+  </body>
+</html>
