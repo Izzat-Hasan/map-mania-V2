@@ -104,6 +104,7 @@ function nextPlace() {
 function cheatcode(){
    score = 10;
   document.getElementById("score-id").value = score;
+  document.getElementById("hint").value = "you won!";
   var favLocations = [
       ['Mackinac Island', 45.842829962, -84.617997528],
       ['San Diego', 32.7157, -117.1611],
